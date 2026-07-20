@@ -1,0 +1,44 @@
+{
+  "name": "optiprompt",
+  "displayName": "OptiPrompt",
+  "version": "1.0.0",
+  "description": "AI-powered prompt compressor browser extension to reduce token usage and optimize prompts using OpenRouter.",
+  "author": "Antigravity",
+  "scripts": {
+    "dev": "plasmo dev",
+    "build": "plasmo build",
+    "package": "plasmo package"
+  },
+  "dependencies": {
+    "lucide-react": "^0.344.0",
+    "plasmo": "^0.90.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.24",
+    "@types/react": "^18.2.60",
+    "@types/react-dom": "^18.2.19",
+    "autoprefixer": "^10.4.18",
+    "postcss": "^8.4.35",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.3.3"
+  },
+  "manifest": {
+    "permissions": [
+      "storage",
+      "activeTab"
+    ],
+    "host_permissions": [
+      "https://chatgpt.com/*",
+      "https://claude.ai/*",
+      "https://gemini.google.com/*",
+      "https://*.gemini.google.com/*",
+      "https://grok.com/*",
+      "https://perplexity.ai/*",
+      "https://deepseek.com/*",
+      "https://*.deepseek.com/*",
+      "https://openrouter.ai/*"
+    ]
+  }
+}
